@@ -7,7 +7,61 @@
     <link rel="icon" type="image/x-icon" href="slike/logo/icon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .kontakt-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fffaf0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
+        .kontakt-container label,
+        .kontakt-container input,
+        .kontakt-container textarea,
+        .kontakt-container h1,
+        .kontakt-container h3,
+        .kontakt-container p {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .kontakt-container input,
+        .kontakt-container textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .kontakt-container input[type="button"] {
+            background-color: PeachPuff;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .kontakt-container input[type="button"]:hover {
+            background-color: #ff7f50;
+            color: white;
+        }
+
+        .kontakt-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .kontakt-container ul li {
+            margin-bottom: 10px;
+        }
+
+        .kontakt-container ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
   <nav>
@@ -16,46 +70,45 @@
         <li><a href="oNama.html">O nama</a></li>
         <li><a href="galerija.html">Galerija</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
-      
     </ul>
  </nav>
-    
-      <center>
 
+  <div class="kontakt-container">
     <h1>Kontaktirajte nas</h1>
 
     <section class="contact-info">
       <p><i class="fa fa-envelope"></i> Email: kontakt@example.com</p>
       <p><i class="fa fa-phone"></i> Telefon: +381 64 123 4567</p>
       <p><i class="fa fa-map-marker"></i> Adresa: Ulica i broj, Grad</p>
-      
-  </section>
-        <label for="firstName">Ime:</label>
-      <input type="text" id="firstName" name="firstName"><br><br>
-      <label for="lastName">Prezime:</label>
-      <input type="text" id="lastName" name="lastName"><br><br>
-        <label for="username">Korisničko ime:</label>
-      <input type="text" id="username" name="username"><br><br>
-        <label for="password">Šifra:</label>
-      <input type="password" id="password" name="password"><br><br>
-        <label for="freeform">Da li imate neke zamerke ili pohvale:</label>
-      <br>
-        <textarea id="freeform" name="freeform" rows="4" cols="50">
-        </textarea><br><br>
-        <input type="button" value="Submit">
+    </section>
 
+    <label for="firstName">Ime:</label>
+    <input type="text" id="firstName" name="firstName">
 
-      
-      <h3>Naše društvene mrže:</h3>
-    
-        
-      <li> <a href="https://www.facebook.com/"> Facebook </a> </li>
-      <li> <a href="https://www.instagram.com/"> Instagram </a> </li>
-      <li> <a href="https://www.twitter.com/"> Twitter</a> </li>
-    
-      </center>
+    <label for="lastName">Prezime:</label>
+    <input type="text" id="lastName" name="lastName">
 
-      
-    
+    <label for="username">Korisnicko ime:</label>
+    <input type="text" id="username" name="username">
+
+    <label for="password">Sifra:</label>
+    <input type="password" id="password" name="password">
+
+    <label for="freeform">Da li imate neke zamerke ili pohvale:</label>
+    <textarea id="freeform" name="freeform" rows="4"></textarea>
+
+    <input type="button" value="Submit">
+
+    <h3>Naše društvene mreže:</h3>
+    <ul>
+      <li><a href="https://www.facebook.com/">Facebook</a></li>
+      <li><a href="https://www.instagram.com/">Instagram</a></li>
+      <li><a href="https://www.twitter.com/">Twitter</a></li>
+    </ul>
+  </div>
 </body>
 </html>
+
+      
+
+
