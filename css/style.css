@@ -131,11 +131,13 @@ form {
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 form input, form textarea {
     width: 100%;
-    margin: 10px 0;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -148,10 +150,7 @@ form input:focus, form textarea:focus {
 }
 
 form button {
-    display: block;
-    width: 100%;
     padding: 10px;
-    margin-top: 10px;
     border: none;
     border-radius: 5px;
     background-color: PeachPuff;
@@ -195,16 +194,11 @@ img {
 
 .contact-info {
     color: #352726;
-    display: box;
-    justify-content: center;
     font-weight: bold;
-    position: absolute;
-    top: 90%;
-    left: 52%;
-    transform: translate(-50%, -50%); 
-    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
 }
-
 
 @media (max-width: 1024px) {
     #main-header {
@@ -241,7 +235,7 @@ img {
     }
 
     h1, h2 {
-        font-size: 2rem; /
+        font-size: 2rem;
     }
 
     .horizontal-images {
@@ -259,5 +253,10 @@ img {
 
     form button {
         padding: 12px; 
+    }
+
+    .contact-info {
+        font-size: 1rem;
+        margin-top: 30px;
     }
 }
